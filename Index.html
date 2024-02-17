@@ -16,6 +16,7 @@
         <option value="EUR">Euro (EUR)</option>
         <option value="JPY">Japanese Yen (JPY)</option>
         <option value="GBP">British Pound Sterling (GBP)</option>
+        <option value="MXN">Mexican Peso (MXN)</option>
     </select>
     <br><br>
     <button onclick="convertCurrency()">Convert</button>
@@ -36,6 +37,9 @@
                     break;
                 case 'GBP':
                     convertedAmount = amount * 0.72; // 1 USD to GBP
+                    break;
+                    case 'MXN':
+                    convertedAmount = amount * 17.05; // 1 USD to MXN
                     break;
                 default:
                     convertedAmount = 'Invalid Currency';
