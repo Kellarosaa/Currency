@@ -17,6 +17,9 @@
         <option value="JPY">Japanese Yen (JPY)</option>
         <option value="GBP">British Pound Sterling (GBP)</option>
         <option value="MXN">Mexican Peso (MXN)</option>
+          <option value="CAD">Canadian Dollar (CAD)</option>
+          <option value="JMD">Jamaican Dollar (JMD)</option>
+          <option value="SGD">Singapore dollar (SGD)</option>
     </select>
     <br><br>
     <button onclick="convertCurrency()">Convert</button>
@@ -46,6 +49,12 @@
                     break;
                     case 'JMD':
                     convertedAmount = amount * 156.56; // 1 USD to JMD
+                    break;
+                      case 'SGD':
+                    convertedAmount = amount * 1.35; // 1 USD to SGD
+                    break;
+                    case 'SGD':
+                    convertedAmount = amount * 1.35; // 1 USD to SGD
                     break;
                 default:
                     convertedAmount = 'Invalid Currency';
